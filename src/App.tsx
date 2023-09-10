@@ -1,4 +1,3 @@
-import './App.css'
 import React, {useState, useEffect, useRef} from "react"
 import {ITodo} from './types/data'
 import TodoList from './components/TodoList';
@@ -51,8 +50,9 @@ const App: React.FC = () => {
     }, []);
 
     return <div>
+        <h1>To do</h1>
         <div>
-            <input value={value} onChange={handleChange} onKeyDown={handleKeyDown} ref={inputRef} />
+            <input type="text" value={value} onChange={handleChange} onKeyDown={handleKeyDown} ref={inputRef} />
             <button onClick={addTodo}>Add</button>
         </div>
         <TodoList items={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} />
