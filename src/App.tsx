@@ -1,7 +1,7 @@
 import './App.css'
 import React, {useState, useEffect, useRef} from "react"
-import {ITodo} from 'types/data'
-import TodoList from "./components/TodoList";
+import {ITodo} from './types/data'
+import TodoList from './components/TodoList';
 
 const App: React.FC = () => {
     const [value, setValue] = useState('');

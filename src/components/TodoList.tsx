@@ -9,7 +9,7 @@ interface ITodoListProps {
 }
 
 const TodoList: React.FC<ITodoListProps> = (props) => {
-    const {items, removeTodo, toggleTodo} = props;
+    const {removeTodo, toggleTodo} = props;
 
     return <div>
         {
