@@ -51,7 +51,7 @@ const App: React.FC = () => {
 
     return <div>
         <h1>To do</h1>
-        <div>
+        <div className="add-todo">
             <input type="text" value={value} onChange={handleChange} onKeyDown={handleKeyDown} ref={inputRef} />
             <button onClick={addTodo}>Add</button>
         </div>
