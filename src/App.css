@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: red;
+}
+
+.todo-title {
+  display: inline-block;
+  margin: 0 10px;
+}
